@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-commerce App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🛒 E-commerce Store</h1>
+
+    <!-- Login Section -->
+    <div class="login">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p id="loginMsg"></p>
+    </div>
+
+    <!-- Product Section -->
+    <div class="products">
+        <h2>Products</h2>
+
+        <div class="product">
+            <h3>Product 1</h3>
+            <p>₹500</p>
+            <button onclick="addToCart('Product 1', 500)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <h3>Product 2</h3>
+            <p>₹800</p>
+            <button onclick="addToCart('Product 2', 800)">Add to Cart</button>
+        </div>
+
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart">
+        <h2>Cart</h2>
+        <ul id="cartList"></ul>
+        <p id="total"></p>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
